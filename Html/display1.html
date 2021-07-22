@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Display Details</title>
+
+</head>
+<body>
+<script>
+            function getParams(){
+                var idx = document.URL.indexOf('?');
+                var params = new Array();
+                if (idx != -1) {
+                    var pairs = document.URL.substring(idx+1, document.URL.length).split('&');
+                    for (var i=0; i<pairs.length; i++){
+                        nameVal = pairs[i].split('=');
+                        params[nameVal[0]] = nameVal[1];
+                    }
+                }
+                return params;
+            }
+            params = getParams();
+            firstname = unescape(params["fname"]);
+            secname = unescape(params["sname"]);
+         
+            document.write("firstname = " + firstname + "<br>");
+            document.write("lastname = " + secname + "<br>");
+           
+        </script>
+</body>
+</html>

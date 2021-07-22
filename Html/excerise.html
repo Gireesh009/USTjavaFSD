@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Covid Details</title>
+<style>
+table{
+margin-left:30%;
+}
+.btn{
+margin-left:45%;
+width:55%;
+}
+.input{
+width:100%
+}
+</style>
+</head>
+<body>
+<form action="display.html" method="GET" target="_self_blank">
+<h1 align="center">Covid Registration</h1>
+<table>
+
+<tr><td>
+<label><b>First Name:</b></label>
+</td><td>
+<input type="text" class="input" name="fname" placeholder="Enter FirstName" required> 
+</td></tr>
+<tr><td>
+<label><b>Second Name:</b></label>
+</td><td>
+<input type="text" class="input" name="sname" placeholder="Enter SecondName" required> 
+</td></tr>
+<tr><td>
+<label><b>Address:</b></label>
+</td><td>
+<textarea name="adrs" class="input" placeholder="Enter Address"></textarea>
+</td></tr>
+
+<tr><td>
+<label><b>Phone Number:</b></label>
+</td><td>
+<input type="text" class="input" name="phno" placeholder="Enter Phone Number" required> 
+</td><td>
+<tr><td>
+<label><b>Date of admission:</b></label>
+</td><td>
+<input type="datetime" class="input"name="dateof" placeholder="Select date">
+</td></tr>
+
+<tr><td colspan="2">
+  <input type="submit" class="btn" value="Submit" > </td></tr>
+</table>
+</form>
+</body>
+</html>
