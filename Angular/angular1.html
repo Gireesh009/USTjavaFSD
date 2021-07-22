@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+     <title> ng-repeat</title>
+     <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js">
+     </script>
+</head>
+<body ng-controller="MainCtrl">
+     <h2>Here is the name list</h2>
+     <div ng-app=" " ng-init="names=['xxx','yyy','zzz']">
+     <ul>
+        <li ng-repeat="name in names">
+            {{name | uppercase}}
+        </li>
+     </ul></div>
+     <Script>
+    //  var app = angular.module('myApp',[]);
+  
+    //     app.controller('MainCtrl', function($scope){
+    //         $scope.names = ['Adam','Steve','George','James','Armin'];
+            
+    //     });
+    //     </Script>
+</body>
+</html> 
